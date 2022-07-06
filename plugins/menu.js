@@ -37,24 +37,24 @@ let tags = {
 const defaultMenu = {
   before: `
 ╔════════════════╗
-╠➤👤𝙊𝙬𝙣𝙚𝙧 : ${global.ownername}
-╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : Senz Senpai
-╠➤⏰𝙐𝙥𝙩𝙞𝙢𝙚 : %uptime
-╠➤🗓️𝙏𝙖𝙣𝙜𝙜𝙖𝙡: %date
+╠❏ Owner : ${global.ownername}
+╠❏ Creator : Senz Senpai
+╠❏ Runtime : %uptime
+╠❏ Tanggal: %date
 ╚═══════╦════════╝
 ╔═══════╩════════╗
-║ 〘𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙼𝚄〙
-╠❥📈𝙻𝚒𝚖𝚒𝚝 : %limit
-╠❥🥀𝙻𝚎𝚟𝚎𝚕 : %level
-╠❥🤺𝙴𝚡𝚙   : %exp
+║ Profile
+╠❏ Limit : %limit
+╠❏ Level : %level
+╠❏ Exp   : %exp
 ╠════════════════╝
 %readmore`.trimStart(),
-  header: '╠♨ %category ♨',
-  body: '╠✠ %cmd %islimit %isPremium',
+  header: '╠❏ %category ❏',
+  body: '╠❏ %cmd %islimit %isPremium',
   footer: '╠════════════════╝\n╠════════════════╗',
   after: `${global.namabot}
 *𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐢𝐧𝐢 𝐝𝐢𝐛𝐮𝐚𝐭 𝐨𝐥𝐞𝐡 ${global.ownername}
-${global.ownerinsta}
+
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -158,10 +158,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
-    conn.sendHydrated(m.chat, text.trim(), 'Senz', null, 'https://chat.whatsapp.com/DDwFYaE7IaL7MDvvhzdpoD', 'Grup Bot', '', '', [
-      ['Donasi', '/donasi'],
-      ['Sewa', '/sewa'],
-      ['Owner', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), 'Senz', null, 'https://chat.whatsapp.com/DDwFYaE7IaL7MDvvhzdpoD', '❏ Grup Bot', '', '', [
+      ['❏ Donasi', '/donasi'],
+      ['❏ Sewa', '/sewa'],
+      ['❏ Owner', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
