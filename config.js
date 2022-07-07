@@ -30,7 +30,7 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': '524e9d1f64f72f79',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.neoxr.eu.org/': '0fWgL9ID',
+  'https://api.neoxr.eu.org/': 'm9IIHgza',
   'https://pencarikode.xyz': 'pais',
   'https://melcanz.com': 'ZZBk7EBb',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
@@ -61,7 +61,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = 'Created by Senz'
+global.wm = '© Senz'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
